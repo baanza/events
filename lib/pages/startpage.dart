@@ -36,9 +36,10 @@ class Startpage extends StatelessWidget {
               ),
               Container(
                 width: ScreenSize.width * 0.75,
-                decoration: const BoxDecoration(
-                    color: Color(0xFF107cdd),
-                    borderRadius: BorderRadius.all(Radius.circular(8))),
+                decoration: BoxDecoration(
+                    color: Colors.transparent,
+                    border: Border.all(color: Colors.grey),
+                    borderRadius: const BorderRadius.all(Radius.circular(8))),
                 child: ElevatedButton(
                   onPressed: () {
                     Navigator.push(

@@ -1,6 +1,7 @@
 // ignore_for_file: non_constant_identifier_names
 
 import 'package:flutter/material.dart';
+import 'package:myapp/pages/startpage.dart';
 import 'package:myapp/styles/appStyles.dart';
 import 'package:myapp/widgets/loginform.dart';
 
@@ -15,7 +16,7 @@ class Loginpage extends StatelessWidget {
         appBar: AppBar(
           backgroundColor: const Color(0xFF070D23),
           leading:  IconButton(onPressed: (){
-            Navigator.pop(context);
+            Navigator.push(context, MaterialPageRoute(builder: (context)=> const Startpage()));
           }, icon: const Icon(Icons.arrow_back_ios_new, color: Colors.white,)),
           elevation: 0.0,
         ),
