@@ -1,7 +1,8 @@
 import 'package:fluentui_icons/fluentui_icons.dart';
 import 'package:flutter/material.dart';
-import 'package:myapp/pages/homepage.dart';
+// import 'package:myapp/pages/homepage.dart';
 import 'package:myapp/pages/loginPage.dart';
+import 'package:myapp/pages/pages.dart';
 import 'package:myapp/widgets/user.dart';
 
 class Loginform extends StatefulWidget {
@@ -94,7 +95,7 @@ class _LoginformState extends State<Loginform> {
           ),
           Center(
             child: ElevatedButton(onPressed: (){
-              Navigator.push(context, MaterialPageRoute(builder: (context) => const HomePage()));
+              Navigator.push(context, MaterialPageRoute(builder: (context) => const SelectPage()));
             }, child: Text(
               widget.reg? "Sign Up" : "Sign In",
               )
