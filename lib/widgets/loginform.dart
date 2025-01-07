@@ -95,7 +95,7 @@ class _LoginformState extends State<Loginform> {
           ),
           Center(
             child: ElevatedButton(onPressed: (){
-              Navigator.push(context, MaterialPageRoute(builder: (context) => const SelectPage()));
+              Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => const SelectPage()));
             }, child: Text(
               widget.reg? "Sign Up" : "Sign In",
               )

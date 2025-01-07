@@ -22,7 +22,6 @@ class _SelectPageState extends State<SelectPage> {
         const HomePage(),
         const Mappage(),
         const Startpage(),
-        
         ][currentIndex],
 
       bottomNavigationBar:  NavigationBar(
